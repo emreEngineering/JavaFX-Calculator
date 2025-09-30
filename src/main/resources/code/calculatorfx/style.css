@@ -1,0 +1,96 @@
+/* JavaFX CSS - Black Calculator */
+
+.root {
+    -fx-font-family: "Courier New", Courier, monospace;
+    -fx-background-color: #1a1a1a;
+}
+
+.container {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 0;
+    -fx-padding: 20;
+}
+
+/* Display/Value Field */
+.value {
+    -fx-background-color: #a7af7c;
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 15;
+    -fx-alignment: center-right;
+    -fx-padding: 20;
+    -fx-font-size: 2.5em;
+    -fx-text-fill: #000000;
+    -fx-font-weight: normal;
+}
+
+/* Normal Calculator Buttons */
+.calculator-button {
+    -fx-text-fill: #e0e0e0;
+    -fx-background-color: 
+        linear-gradient(to bottom, #3a3a3a 0%, #2a2a2a 100%);
+    -fx-background-radius: 12;
+    -fx-font-size: 1.8em;
+    -fx-font-weight: normal;
+    -fx-cursor: hand;
+    -fx-border-color: #1a1a1a;
+    -fx-border-width: 3;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 8, 0.3, 0, 4);
+}
+
+.calculator-button:hover {
+    -fx-background-color: 
+        linear-gradient(to bottom, #454545 0%, #353535 100%);
+}
+
+.calculator-button:pressed {
+    -fx-background-color: 
+        linear-gradient(to bottom, #505050 0%, #404040 100%);
+    -fx-translate-y: 2;
+}
+
+/* Clear Button - Red */
+.clear-button {
+    -fx-background-color: 
+        linear-gradient(to bottom, #e53935 0%, #c62828 100%);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 8, 0.3, 0, 4);
+}
+
+.clear-button:hover {
+    -fx-background-color: 
+        linear-gradient(to bottom, #ef5350 0%, #d32f2f 100%);
+}
+
+.clear-button:pressed {
+    -fx-background-color: 
+        linear-gradient(to bottom, #f44336 0%, #e53935 100%);
+    -fx-translate-y: 2;
+}
+
+/* Plus Button - Tall */
+.plus-button {
+    -fx-background-color: 
+        linear-gradient(to bottom, #3a3a3a 0%, #2a2a2a 100%);
+}
+
+/* Equal Button - Blue */
+.equal-button {
+    -fx-background-color: 
+        linear-gradient(to bottom, #42a5f5 0%, #1e88e5 100%);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 8, 0.3, 0, 4);
+}
+
+.equal-button:hover {
+    -fx-background-color: 
+        linear-gradient(to bottom, #64b5f6 0%, #2196f3 100%);
+}
+
+.equal-button:pressed {
+    -fx-background-color: 
+        linear-gradient(to bottom, #90caf9 0%, #42a5f5 100%);
+    -fx-translate-y: 2;
+}

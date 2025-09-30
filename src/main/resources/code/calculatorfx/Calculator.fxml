@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="code.calculatorfx.CalculatorController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="470.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <TextField fx:id="screen" layoutX="40.0" layoutY="35.0" prefHeight="100.0" prefWidth="390.0">
+         <styleClass>
+            <String fx:value="root" />
+            <String fx:value="value" />
+         </styleClass>
+      </TextField>
+      <Button fx:id="zeroButton" layoutX="45.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleZeroButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="0" />
+      <Button fx:id="twoZeroButton" layoutX="145.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleTwoZeroButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="00" />
+      <Button fx:id="dotButton" layoutX="245.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleDotButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="." />
+      <Button fx:id="equalsButton" layoutX="345.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleEqualsButton" prefHeight="80.0" prefWidth="80.0" text="=">
+         <styleClass>
+            <String fx:value="calculator-button" />
+            <String fx:value="equal-button" />
+         </styleClass>
+      </Button>
+      <Button fx:id="oneButton" layoutX="45.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleOneButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="1" />
+      <Button fx:id="twoButton" layoutX="145.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleTwoButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="2" />
+      <Button fx:id="threeButton" layoutX="245.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleThreeButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="3" />
+      <Button fx:id="fourButton" layoutX="45.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleFourButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="4" />
+      <Button fx:id="fiveButton" layoutX="145.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleFiveButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="5" />
+      <Button fx:id="sixButton" layoutX="245.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSixButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="6" />
+      <Button fx:id="plusButton" layoutX="345.0" layoutY="350.0" mnemonicParsing="false" onAction="#handlePlusButton" prefHeight="180.0" prefWidth="80.0" text="+">
+         <styleClass>
+            <String fx:value="calculator-button" />
+            <String fx:value="plus-button" />
+            <String fx:value="root" />
+         </styleClass>
+      </Button>
+      <Button fx:id="sevenButton" layoutX="45.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleSevenButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="7" />
+      <Button fx:id="eightButton" layoutX="145.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleEightButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="8" />
+      <Button fx:id="nineButton" layoutX="245.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleNineButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="9" />
+      <Button fx:id="minusButton" layoutX="345.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleMinusButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="-" />
+      <Button fx:id="clearButton" layoutX="45.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="80.0" prefWidth="180.0" text="C">
+         <styleClass>
+            <String fx:value="calculator-button" />
+            <String fx:value="clear-button" />
+            <String fx:value="root" />
+         </styleClass>
+      </Button>
+      <Button fx:id="dividedButton" layoutX="245.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleDividedButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="/" />
+      <Button fx:id="multiplyButton" layoutX="345.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleMultiplyButton" prefHeight="80.0" prefWidth="80.0" styleClass="calculator-button" text="*" />
+   </children>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="container" />
+   </styleClass>
+</AnchorPane>
