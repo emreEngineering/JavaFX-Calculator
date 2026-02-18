@@ -5,12 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.net.URL;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
+        URL fxml = Main.class.getResource("/code/calculatorfx/Calculator.fxml");
+        if (fxml == null) {
+            throw new IllegalStateException("FXML not found: /code/calculatorfx/Calculator.fxml");
+        }
+        Parent root = FXMLLoader.load(fxml);
 
         primaryStage.setTitle("JavaFX Hesap Makinesi");
         primaryStage.setResizable(false);
